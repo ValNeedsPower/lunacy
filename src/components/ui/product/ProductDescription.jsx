@@ -1,7 +1,7 @@
 import BtnSecondary from '../BtnSecondary'
 import BtnPrimary from '../BtnPrimary'
 import SubHeading from '../SubHeading'
-import NoviceTag from '../tags/noviceTag'
+import NoviceTag from '../tags/NoviceTag'
 import LimitedTag from '../tags/LimitedTag'
 import ComboTag from '../tags/ComboTag'
 const ProductDescription = ({ onClick }) => {
