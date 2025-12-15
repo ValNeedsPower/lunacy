@@ -2,7 +2,7 @@ import BtnPrimary from './ui/BtnPrimary'
 import BtnSecondary from './ui/BtnSecondary'
 import ComboTag from './ui/tags/ComboTag'
 import LimitedTag from './ui/tags/LimitedTag'
-import NoviceTag from './ui/tags/noviceTag'
+import NoviceTag from './ui/tags/NoviceTag'
 
 const ProductCard = ({ productImg, combo, novice, limited, productName, price, formerPrice }) => {
   return (
