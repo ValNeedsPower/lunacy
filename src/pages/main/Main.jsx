@@ -67,14 +67,12 @@ const Main = () => {
     <div className="relative overflow-hidden">
       <div ref={heroRef}>
         <HeroSection />
-      </div>
 
-      <div
-        ref={bgRef}
-        className="bg-[url(./bg_pattern.png)] inset-0 bg-no-repeat brightness-150 absolute top-[600px] bg-top w-full h-[1200px]"
-      />
+        <div
+          ref={bgRef}
+          className="bg-[url(./bg_pattern.png)] inset-0 bg-no-repeat brightness-150 absolute top-[600px] bg-top w-full h-[1200px]"
+        />
 
-      <div ref={topRef}>
         <TopProducts btn />
       </div>
 
