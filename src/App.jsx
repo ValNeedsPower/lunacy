@@ -9,20 +9,22 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route
-          path="/"
-          element={<Main />}
-        />
-        <Route
-          path="/catalogue"
-          element={<Catalogue />}
-        />
-        <Route
-          path="/longwei"
-          element={<LongweiProduct />}
-        />
-      </Routes>
+      <div className="min-w-[1440px] justify-center flex flex-col mx-auto max-w-[1440px]">
+        <Routes>
+          <Route
+            path="/"
+            element={<Main />}
+          />
+          <Route
+            path="/catalogue"
+            element={<Catalogue />}
+          />
+          <Route
+            path="/longwei"
+            element={<LongweiProduct />}
+          />
+        </Routes>
+      </div>
       <Footer />
     </>
   )

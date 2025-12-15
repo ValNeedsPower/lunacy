@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import BtnPrimary from './ui/BtnPrimary'
 import BtnSecondary from './ui/BtnSecondary'
 import ComboTag from './ui/tags/ComboTag'
@@ -27,8 +28,17 @@ const ProductCard = ({ productImg, combo, novice, limited, productName, price, f
         "
       >
         <div className="flex relative z-40 pt-20 items-center space-y-2 justify-center flex-col">
-          <BtnPrimary add="w-[115px]">Купить</BtnPrimary>
-          <BtnSecondary add="w-[115px]">Подробнее</BtnSecondary>
+          <NavLink
+            target="_blank"
+            to="https://www.ozon.ru/product/klaviatura-besprovodnaya-lunacy-longwei-mousepad-g3ms-diamond-liswk03-red-3185996130/?af_dp=https%3A%2F%2Fozon.ru%2Fproduct%2F3185996130%3Fhs%3D1&hs=1&shortlink=a1bd1ruq&source_caller=api&utm_campaign=vendor_org_1456383&utm_content=longwei&utm_medium=button&utm_source=site"
+          >
+            {' '}
+            <BtnPrimary add="w-[115px]">Купить</BtnPrimary>{' '}
+          </NavLink>
+          <NavLink to="/longwei">
+            {' '}
+            <BtnSecondary add="w-[115px]">Подробнее</BtnSecondary>{' '}
+          </NavLink>
         </div>
       </div>
 

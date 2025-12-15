@@ -12,7 +12,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className="flex sticky top-0 z-50 shadow-lg items-center mx-auto justify-center px-[112px] py-[30px] bg-[#010E13]">
+    <nav className="flex max-w-[1440px] sticky top-0 z-50 shadow-lg items-center mx-auto justify-center px-[112px] py-[30px] bg-[#010E13]">
       {/* LOGOTYPE */}
       <div className="flex w-full justify-between mx-auto px-auto items-center">
         <div className="flex">

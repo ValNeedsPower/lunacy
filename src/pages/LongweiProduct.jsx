@@ -1,5 +1,7 @@
 import ProductDescription from '../components/ui/product/ProductDescription'
 import ProductPopUp from '../components/ui/product/ProductPopUp'
+import SubHeading from '../components/ui/SubHeading'
+import TopProductsSecond from './main/TopProductsSecond'
 
 import { useEffect, useState } from 'react'
 
@@ -54,9 +56,9 @@ const LongweiProduct = () => {
   //TODO: дизайн комбо?
 
   return (
-    <div className="h-[600px]  overflow-hidden">
+    <div className="h-[1000px]  overflow-hidden">
       {open && <ProductPopUp onClick={() => setOpen(false)} />}
-      <div className="bg-[url(./bg_pattern.png)] bg-no-repeat brightness-150 absolute top-0 bg-top w-full h-[800px]" />
+      <div className="bg-[url(./bg_pattern.png)] bg-no-repeat brightness-150 absolute inset-0 top-0 bg-top w-full h-[800px]" />
       <div className="flex mt-20 gap-x-5 px-[112px] w-full">
         <div className="flex relative basis-3/5  border h-[337px] rounded-3xl border-[#5BC8F7]/25">
           {slides.map((slide, i) => (
@@ -109,6 +111,20 @@ const LongweiProduct = () => {
           </div>
         </div>
         <ProductDescription onClick={() => setOpen(true)} />
+      </div>
+
+      <div className="flex w-full flex-col mt-20">
+        {/* <div className="flex px-[112px] justify-start -mb-10">
+          {' '}
+          <SubHeading
+            add="opacity-50"
+            mode="light"
+          >
+            {' '}
+            вам может понравиться
+          </SubHeading>
+        </div> */}
+        <TopProductsSecond />
       </div>
     </div>
   )

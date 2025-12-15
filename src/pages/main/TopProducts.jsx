@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import ProductCard from '../../components/ProductCard'
 import BtnSecondary from '../../components/ui/BtnSecondary'
 
@@ -42,7 +43,13 @@ const TopProducts = ({ btn }) => {
 
       {btn && (
         <div className="mt-10 flex justify-center items-center">
-          <BtnSecondary>Посмотреть все товары</BtnSecondary>
+          <NavLink
+            to="/catalogue"
+            end
+          >
+            {' '}
+            <BtnSecondary>Посмотреть все товары</BtnSecondary>{' '}
+          </NavLink>
         </div>
       )}
     </>

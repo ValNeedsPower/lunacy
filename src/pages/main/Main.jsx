@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div className="relative">
       <HeroSection />
-      <div className="bg-[url(./bg_pattern.png)] bg-no-repeat brightness-150 absolute top-[600px] bg-top w-full h-[1200px]" />
+      <div className="bg-[url(./bg_pattern.png)] inset-0 bg-no-repeat brightness-150 absolute top-[600px] bg-top w-full h-[1200px]" />
 
       {/* TOP PRODUCTS LINE */}
       <TopProducts btn />

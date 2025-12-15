@@ -3,6 +3,7 @@ import BtnSecondary from '../../components/ui/BtnSecondary'
 import BtnPrimary from '../../components/ui/BtnPrimary'
 import Heading from '../../components/ui/Heading'
 import SubHeading from '../../components/ui/SubHeading'
+import { NavLink } from 'react-router-dom'
 
 const SLIDE_DURATION = 4000
 //const SLIDE_DURATION = 40000
@@ -83,7 +84,7 @@ const HeroSection = () => {
   }
 
   return (
-    <div className="relative w-full h-[592px] overflow-hidden">
+    <div className="relative w-full  max-h-[592px] min-h-[592px] h-[592px] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
@@ -102,13 +103,21 @@ const HeroSection = () => {
               <SubHeading mode={slide.headingMode}>{slide.sub}</SubHeading>
 
               <div className="flex relative z-20 space-x-3 mt-6">
-                <BtnSecondary
-                  mode={slide.headingMode}
-                  add="w-[115px]"
+                <NavLink to="/longwei">
+                  {' '}
+                  <BtnSecondary
+                    mode={slide.headingMode}
+                    add="w-[115px]"
+                  >
+                    Подробнее
+                  </BtnSecondary>
+                </NavLink>
+                <NavLink
+                  target="_blank"
+                  to="https://www.ozon.ru/product/klaviatura-besprovodnaya-lunacy-longwei-mousepad-g3ms-diamond-liswk03-red-3185996130/?af_dp=https%3A%2F%2Fozon.ru%2Fproduct%2F3185996130%3Fhs%3D1&hs=1&shortlink=a1bd1ruq&source_caller=api&utm_campaign=vendor_org_1456383&utm_content=longwei&utm_medium=button&utm_source=site"
                 >
-                  Подробнее
-                </BtnSecondary>
-                <BtnPrimary add="w-[115px]">Купить</BtnPrimary>
+                  <BtnPrimary add="w-[115px]">Купить</BtnPrimary>
+                </NavLink>
               </div>
             </div>
           )}

@@ -4,6 +4,8 @@ import SubHeading from '../SubHeading'
 import NoviceTag from '../tags/NoviceTag'
 import LimitedTag from '../tags/LimitedTag'
 import ComboTag from '../tags/ComboTag'
+import { NavLink } from 'react-router-dom'
+
 const ProductDescription = ({ onClick }) => {
   return (
     <div className="flex flex-col justify-between basis-2/5">
@@ -36,10 +38,16 @@ const ProductDescription = ({ onClick }) => {
           <br /> Премиальные свитчи и коврик в комплекте
         </p>
       </div>
-      <BtnPrimary>
-        {' '}
-        Купить на <b>OZON </b>
-      </BtnPrimary>
+      <NavLink
+        className="flex w-full"
+        target="_blank"
+        to="https://www.ozon.ru/product/klaviatura-besprovodnaya-lunacy-longwei-mousepad-g3ms-diamond-liswk03-red-3185996130/?af_dp=https%3A%2F%2Fozon.ru%2Fproduct%2F3185996130%3Fhs%3D1&hs=1&shortlink=a1bd1ruq&source_caller=api&utm_campaign=vendor_org_1456383&utm_content=longwei&utm_medium=button&utm_source=site"
+      >
+        <BtnPrimary add="w-full">
+          {' '}
+          Купить на <b>OZON </b>
+        </BtnPrimary>
+      </NavLink>
     </div>
   )
 }

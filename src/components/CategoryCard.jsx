@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import BtnSecondary from './ui/BtnSecondary'
 
 const CategoryCard = ({ productImg, catName, catIcon, mode }) => {
@@ -48,13 +49,19 @@ const CategoryCard = ({ productImg, catName, catIcon, mode }) => {
         className="flex hover:scale-95 duration-300 cursor-pointer relative basis-[50%] filter drop-shadow-[0_0_2px_rgba(255,243,231,0.2)] bg-cover h-[300px] rounded-3xl"
       >
         <div className="flex absolute w-full h-fit justify-end bottom-6 right-6">
-          <BtnSecondary
-            mode={mode}
-            icon={catIcon}
-            add="mt-6"
+          <NavLink
+            to="/catalogue"
+            end
           >
-            {catName}
-          </BtnSecondary>
+            {' '}
+            <BtnSecondary
+              mode={mode}
+              icon={catIcon}
+              add="mt-6"
+            >
+              {catName}
+            </BtnSecondary>
+          </NavLink>
         </div>
       </div>
     </>
